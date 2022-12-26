@@ -21,7 +21,7 @@ def create_app():
     from .models import User  #Imports the user table from models.py
     with app.app_context():
         db.create_all()
-        print("Created Database")
+        print("Created  Database")
                                                     
     login_manager=LoginManager()            #Login Manager created
     login_manager.login_view="auth.login"  #if someone is not logged in we redirect them to auth.login
