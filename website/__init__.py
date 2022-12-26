@@ -7,7 +7,6 @@ db=SQLAlchemy()
 DB_NAME="database.db"       #name of database is stored in this variable
 
 
-
 def create_app():
     app=Flask(__name__)
     app.config['SECRET_KEY']="helloworld"                             #evry app has a secret key and in this case we defined it as helloworld
