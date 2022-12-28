@@ -17,7 +17,7 @@ def create_app():
     from .auth import auth
     app.register_blueprint(views, url_prefix="/")
     app.register_blueprint(auth, url_prefix="/")
-    from .models import User,Post,Comment  #Imports the user table from models.py
+    from .models import User,Post,Comment,Like #Imports the user table from models.py
     with app.app_context():
         db.create_all()
         print("Created  Database")
